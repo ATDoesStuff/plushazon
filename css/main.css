@@ -1,0 +1,149 @@
+:root{
+    --main: #995a35;
+    --secondary: #B86433;
+    --interactives: #b96d40;
+    --light: #fff5eb;
+    --bgMain: #E3D4C5;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--bgMain) 50%, var(--bgSec) 50%);
+}
+body{
+    font-size: 16px;
+    height: 100%;
+    font-family: "Nunito";
+}
+h1{
+    margin-left: 2rem;
+    font-family: 'Arial Rounded MT';
+    color: white;
+    text-decoration: none;
+}h1:hover{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+img{
+    color: white;
+    text-decoration: none;
+}
+header{
+    background-color: var(--main);
+    padding: 5px 1rem;
+}.headerRight{
+    float: right;
+}.headerRight img{
+    border-radius: 100%;
+}
+
+footer{
+    background-color: var(--main);
+    padding: 2rem;
+    z-index: 2;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: -1;
+    left: 0;
+    background-color: var(--interactives);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    display: block;
+}
+.sidenav a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--bgMain);
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 1.6rem; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    z-index: 1;
+    word-break: break-all; 
+    overflow-y: scroll;
+    height: 102.7%;
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
+}.mainGridAccount{
+    grid: 1fr 1fr/ 1fr 1fr;
+}
+.product{
+    background-color: var(--light);
+    padding: 1rem;
+}.divUserPost{
+    height: 2px;
+    background-color: gray;
+    border-radius: 5px;
+}
+.btnSettings{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 0;
+    border: 0;
+}.btnSettings:hover, .submitBtn:hover{
+    cursor: pointer;
+}.username{
+    float: right;
+    color: white;
+    margin-right: 7px;
+    font-size: 2rem;
+}.imgProduct{
+    width: 200px;
+    height: 200px;
+}.imgProductDiv{
+    width: min-content;
+    margin: auto;
+}
+.divFormInsert{
+    margin: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}.divFormInsert label{
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    padding: 1rem 2rem;
+}form{
+    width: max-content;
+}input{
+    margin: 1rem 2rem;
+    font-size: 2rem;
+}.submitBtn{
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    background-color: var(--interactives);
+    border: var(--secondary) 3px outset;
+    border-radius: 15px;
+    color: white;
+}.submitBtn:active{
+    border: inset;
+}.divRightFloat{
+    margin-top: 0;
+    float: right;
+}.profilePic{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
